@@ -1,0 +1,89 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+/* Change the link color to green on active/current */
+  .active {
+    background-color: rgb(58, 247, 121);
+  }
+  .black-border{
+      border: black solid;
+      background-color:honeydew;
+      width:auto;
+      display: block;
+      padding: 10px;
+
+  }
+  img{
+      width: 20%;
+      margin:10px 0px;
+
+  }
+
+  
+
+
+  footer{
+      font-style:italic;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #333;
+      color:honeydew;
+      font-size:small;
+      
+  }
+
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 320px) {
+  body{
+    background-color: rgb(75, 75, 75);
+    }
+  h1{
+    color: rgb(156, 169, 206);
+    }
+  p {
+    color:lightgray;
+  }
+}
+  
+@media screen and (min-width: 1024px) {
+ body{
+   background-color: rgb(112, 170, 138);
+    }
+ p{
+   color:rgb(158, 91, 158);
+   font-size:x-small;
+  line-height: 30px;;
+  }
+  h1{
+    color:lightsalmon;
+  }
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Recepten </title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Viktoriya's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a> </li>
+                <li><a href="news.html"> News </a> </li>
+                <li><a href="about.html"> About </a> </li>
+                <li><a class="active" href="recipes.html"> Share your recipes </a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form name="mijn-recepten" method="POST" data-netlify="true">
+            <p>
+                <label><strong>Naam: </strong><input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label><strong>Email:</strong> <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Telefoonnummer:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <p>
+                <label><strong>Leeftijd:</strong> <input type="age" name="age" /></label>
+            </p>
+            <p>
+                <label><strong>Geboortedatum:</strong> <input type="date" name="date" /></label>
+            </p>
+            <p> <strong> Geslacht:</strong>
+                <label>Man</label>
+                <input type="radio" id="male" name="gender" value="man">
+                <label>Vrouw</label>
+                <input type="radio" id="female" name="gender" value="vrouw">
+                <label>Anders</label>
+                <input type="radio" id="other" name="gender" value="anders">
+            </p>
+            <p> <strong> Wat is je favorite cuisine?</strong>
+
+                <input type="checkbox" name="fav-cuisine[]" value="frans"><label>Frans</label>
+                <input type="checkbox" name="fav-cuisine[]" value="italiaans"><label>Italiaans</label>
+                <input type="checkbox" name="fav-cuisine[]" value="spaans"><label>Spaans</label>
+                <input type="checkbox" name="fav-cuisine[]" value="arabisch"><label>Arabisch</label>
+
+            </p>
+            <p>
+                <label><strong>Selecteer je favorite kleur:</strong></label>
+                <input type="color" name="favcolor" value="#3f3f3f">
+            </p>
+
+
+            <p>
+                <label><strong>Biografie: </strong></label>
+                <textarea name="message">Vertel iets over jezelf...</textarea>
+            </p>
+            <p>
+                <label><strong>Upload je laatste recept:</strong></label>
+                <input type="file" name="myfile">
+            </p>
+            <p>
+                <label><strong>Link naar je website:</strong><input type="url" name="website"></label>
+            </p>
+
+            <input type="reset">
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+
+    </main>
+
+
+    <footer>
+        <p> Copyright *Viktoriya de Sterke* 2021</p>
+    </footer>
+
+</body>
+
+</html>

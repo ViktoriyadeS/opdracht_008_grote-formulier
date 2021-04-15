@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Contact </title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Viktoriya's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home </a> </li>
+                <li><a href="news.html"> News </a> </li>
+                <li><a href="about.html"> About </a> </li>
+                <li><a href="recipes.html"> Share your recipes </a> </li>
+                <li><a class="active" href="contact.html"> Contact </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Naam: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Email: <input type="email" name="email" /></label>
+            </p>
+
+            <p>
+                <label>Bericht: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Verstuur</button>
+            </p>
+        </form>
+
+
+
+    </main>
+
+
+    <footer>
+        <p> Copyright *Viktoriya de Sterke* 2021</p>
+    </footer>
+
+</body>
+
+</html>
